@@ -22,7 +22,7 @@ spring:
     username: jj
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
-  #    url: jdbc:h2:mem:testdb
+  #    url: jdbc:h2:mem:firstboard
   #    username: sa
   #    password:
   #    driver-class-name: org.h2.Driver
@@ -38,7 +38,11 @@ spring:
   sql:
     init:
       mode: always
-
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: annotated
+#todo : 찾아보기,
 
 
 #  h2:
